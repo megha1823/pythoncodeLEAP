@@ -1,22 +1,11 @@
 ```
-fib = int(input('Enter the no. of terms in fib series:'))
+#Fibonacci series from 1 to 100
 a=0
 b=1
-count=0
 
-for i in range(0,101):
-    if fib <= 0:
-        print("Enter a positive no.")
-    elif fib == 1:
-        print("Fib sequence upto",fib,":")
-        print(0)
-    else:
-        while count < fib:
-            print(a)
-            n = a + b
-            a = b
-            b = n
-            count += 1
+while b<100:
+    print(b)
+    a,b=b,a+b
 ```
 
 
