@@ -11,7 +11,7 @@ phoneList = []
 #defining the read csv to read a csv file
 def ReadCSVFile():
     global header
-    with open('Residents.csv') as csvfile:
+    with open('Downloads/Residents.csv') as csvfile:
         csv_reader = csv.reader(csvfile,delimiter=',')
         header = next(csv_reader)
         for row in csv_reader:
